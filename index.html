@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="lo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kupa · Responsive UI</title>
+<meta name="description" content="Kupa — Desktop & Mobile UI">
+<meta name="theme-color" content="#b3202c">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23b3202c'/%3E%3Cpath d='M13 31h38c-1 15-9 20-19 20S14 46 13 31' fill='white'/%3E%3Cpath d='m23 13 6 11m5-13 6 13' stroke='%23edc879' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Lao:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+<header class="app-header">
+<div class="brand">
+<svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+<rect width="48" height="48" rx="13" fill="#b3202c"/>
+<path d="M10 24h28c-1 11-7 15-14 15s-13-4-14-15" fill="#fff"/>
+<path d="m18 10 4 8m5-9 4 9" stroke="#edc879" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M15 40h18" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/>
+</svg>
+<span>ມາຊາລາ888<span class="brand-dot">.</span></span>
+</div>
+<div class="bottom-navigation" aria-label="ແຖບເມນູຕົວຢ່າງ">
+<div class="nav-item active"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3V10Z"/></svg><span>ໜ້າຫຼັກ</span></div>
+<div class="nav-item"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6z M9 7h6 M9 11h6 M9 15h4"/></svg><span>ເມນູ</span></div>
+<div class="nav-item"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l2 14H3L5 7Z M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>ກະຕ່າ</span></div>
+<div class="nav-item"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0 M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>ໂປຣໄຟລ໌</span></div>
+</div>
+<span class="header-title">ໜ້າຫຼັກ</span>
+<span class="notification"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9 M10 21h4"/></svg><span></span></span>
+</header>
+<main class="page-content">
+<section class="welcome">
+<p>ນະມັດສະເຕ</p>
+<h1>ຢາກລະມາ ບໍ່ຢາກລະເມືອ</h1>
+</section>
+<div class="search-visual"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-5-5 M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0"/></svg><span>ຄົ້ນຫາອາຫານ</span>
+<span class="search-filter"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg></span>
+</div>
+<section class="delivery">
+<div class="delivery-main">
+<span class="delivery-pin"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z M14.5 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/></svg></span>
+<div>
+<h2>ຍ່າງມາຮັບຢູ່ຮ້ານເດີ້</h2>
+<p>ວຽງຈັນ, ສປປ ລາວ</p>
+</div>
+<span class="delivery-chevron"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span>
+</div>
+<span class="delivery-time"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0 M12 7v5l3 2"/></svg>5–10 ນາທີ</span>
+</section>
+<section class="promotion">
+<div class="promotion-copy">
+<span class="eyebrow">FRESHLY MADE</span>
+<h2>ລົດຊາດອິນເດຍ<br>ໃນໂຕະດຽວ.</h2>
+<p>Indian Feast Platter</p>
+<span class="order-visual">ສັ່ງເລີຍ <span>₭ 89,000</span></span>
+</div>
+<img src="assets/feast.jpg" alt="Indian Feast Platter" class="promotion-image">
+<span class="promo-star" aria-hidden="true">✳</span>
+</section>
+<section class="menu">
+<div class="section-heading">
+<div>
+<span class="eyebrow">OUR FOOD</span>
+<h2>ສຸດພິເສດ</h2>
+</div>
+<span class="see-all">ເບິ່ງທັງໝົດ</span>
+</div>
+<div class="categories">
+<span class="category active">ທັງໝົດ</span>
+<span class="category">ຍອດນິຍົມ</span>
+<span class="category">ແກງ</span>
+<span class="category">ເຂົ້າຈີ່</span>
+<span class="category">ຂອງຫວ່າງ</span>
+</div>
+<div class="food-grid">
+<article class="food-card">
+<div class="food-image">
+<img src="assets/feast.jpg" alt="Indian Feast Platter" loading="lazy">
+<span class="food-badge">ຍອດນິຍົມ</span><span class="heart"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+</div>
+<div class="food-heading"><h3>Indian Feast Platter</h3></div>
+<p class="food-description">ຫຼາຍເມນູ · ເຂົ້າຈີ່ · ແກງ</p>
+<div class="rating"><span>★</span><strong>4.9</strong><span class="rating-divider">·</span><span>15–20 ນາທີ</span></div>
+<div class="food-bottom"><strong>₭ 89,000</strong><span class="add"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M5 12h14"/></svg></span></div>
+</article>
+<article class="food-card">
+<div class="food-image">
+<img src="assets/chaat.jpg" alt="Papdi Chaat" loading="lazy">
+<span class="heart"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+</div>
+<div class="food-heading"><h3>Papdi Chaat</h3></div>
+<p class="food-description">ຂອງຫວ່າງ · ໂຍເກີດ</p>
+<div class="rating"><span>★</span><strong>4.8</strong><span class="rating-divider">·</span><span>15–20 ນາທີ</span></div>
+<div class="food-bottom"><strong>₭ 45,000</strong><span class="add"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M5 12h14"/></svg></span></div>
+</article>
+<article class="food-card">
+<div class="food-image">
+<img src="assets/butter-chicken.jpg" alt="Butter Chicken & Naan" loading="lazy">
+<span class="heart"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+</div>
+<div class="food-heading"><h3>Butter Chicken & Naan</h3></div>
+<p class="food-description">ໄກ່ · ນານ</p>
+<div class="rating"><span>★</span><strong>4.9</strong><span class="rating-divider">·</span><span>15–20 ນາທີ</span></div>
+<div class="food-bottom"><strong>₭ 65,000</strong><span class="add"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M5 12h14"/></svg></span></div>
+</article>
+<article class="food-card">
+<div class="food-image">
+<img src="assets/curry-banquet.jpg" alt="Curry Banquet" loading="lazy">
+<span class="heart"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+</div>
+<div class="food-heading"><h3>Curry Banquet</h3></div>
+<p class="food-description">ແກງຫຼາຍແບບ · ເຂົ້າຈີ່</p>
+<div class="rating"><span>★</span><strong>4.8</strong><span class="rating-divider">·</span><span>15–20 ນາທີ</span></div>
+<div class="food-bottom"><strong>₭ 99,000</strong><span class="add"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M5 12h14"/></svg></span></div>
+</article>
+<article class="food-card">
+<div class="food-image">
+<img src="assets/thali.jpg" alt="Indian Thali" loading="lazy">
+<span class="heart"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+</div>
+<div class="food-heading"><h3>Indian Thali</h3></div>
+<p class="food-description">ເຂົ້າ · ແກງ · ຜັກ</p>
+<div class="rating"><span>★</span><strong>4.7</strong><span class="rating-divider">·</span><span>15–20 ນາທີ</span></div>
+<div class="food-bottom"><strong>₭ 75,000</strong><span class="add"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M5 12h14"/></svg></span></div>
+</article>
+<article class="food-card">
+<div class="food-image">
+<img src="assets/palak-paneer.jpg" alt="Palak Paneer" loading="lazy">
+<span class="heart"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+</div>
+<div class="food-heading"><h3>Palak Paneer</h3></div>
+<p class="food-description">ຜັກຂົມ · ເນີຍແຂງ</p>
+<div class="rating"><span>★</span><strong>4.8</strong><span class="rating-divider">·</span><span>15–20 ນາທີ</span></div>
+<div class="food-bottom"><strong>₭ 59,000</strong><span class="add"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M5 12h14"/></svg></span></div>
+</article>
+</div>
+</section>
+<footer class="screen-footer"><span>✳</span>ລົດຊາດຈັດຈ້ານນຈາກມືພໍ່ຄົວທີ່ຍັງບໍ່ລ້າງງ</footer>
+</main>
+</div>
+</body>
+</html>
